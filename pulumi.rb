@@ -1,10 +1,10 @@
 class Pulumi < Formula
   desc "Cloud native development platform"
   homepage "https://pulumi.io/"
-  version "1.0.0-beta.2"
+  version "1.0.0-beta.1"
   url "https://github.com/pulumi/pulumi.git",
-      :tag      => "v1.0.0-beta.2",
-      :revision => "fdfef5f334deac2cfe83288a99f22b73995ae736"
+      :tag      => "v1.0.0-beta.1",
+      :revision => "57b6e84645cbaff8da8ab669c57a6e31f7cb989b"
 
   depends_on "go" => :build
 
