@@ -1,9 +1,9 @@
 class Pulumi < Formula
   desc "Cloud native development platform"
   homepage "https://pulumi.io/"
-  version "1.0.0-beta.1"
-  url "https://get.pulumi.com/releases/sdk/pulumi-v1.0.0-beta.1-darwin-x64.tar.gz"
-  sha256 "678e0ec39c57b0e251cec728874756241a4cc949ce354915edd70accf250e8d6"
+  version "1.0.0-beta.2"
+  url "https://get.pulumi.com/releases/sdk/pulumi-v1.0.0-beta.2-darwin-x64.tar.gz"
+  sha256 "e7e124d39cb9dd3f820b54c87399f15693c7fa7d3331c03a36a8eb505e959872"
 
   def install
     bin.install Dir["#{buildpath}/*"]
