@@ -2,23 +2,11 @@ class Pulumi < Formula
   desc "Cloud native development platform"
   homepage "https://pulumi.io/"
   version "1.0.0-beta.1"
-  url "https://github.com/pulumi/pulumi.git",
-      :tag      => "v1.0.0-beta.1",
-      :revision => "57b6e84645cbaff8da8ab669c57a6e31f7cb989b"
-
-  depends_on "go" => :build
+  url "https://get.pulumi.com/releases/sdk/pulumi-v1.0.0-beta.1-darwin-x64.tar.gz"
+  sha256 ""
 
   def install
-    ENV["GOPATH"] = buildpath
-    ENV["GO111MODULE"] = "on"
-
-    dir = buildpath/"src/github.com/pulumi/pulumi"
-    dir.install buildpath.children
-
-    cd dir do
-      system "go", "mod", "vendor"
-      system "make", "dist"
-      bin.install Dir["#{buildpath}/bin/*"]
+      bin.install Dir["#{buildpath}/*"]
       prefix.install_metafiles
 
       # Install bash completion
